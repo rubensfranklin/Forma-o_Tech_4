@@ -1,5 +1,5 @@
 <h1 align="center" >
-<img src = "https://github.com/Engelp/form_cadastro/blob/main/Formulario%20de%20Registro%20-%20Itau/img/client-itau-square-image-19-jun-27-400x400.jpg">
+<img src = "https://logosvector.net/wp-content/uploads/2013/03/itau-old-vector-logo.png">
 <p> Itaú Tech - Processo Seletivo</p>
 
 ## 🎯 <b>Objetivo</b>
