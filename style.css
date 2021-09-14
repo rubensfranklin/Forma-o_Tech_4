@@ -2,6 +2,86 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --light: #cccccc;
+  --dark: #151515;
+}
+
+/* Ativar o modo escuro*/
+#theme-switcher {
+  display: none;
+}
+
+#app-container {
+  height: 100vh;
+  background: var(--light);
+  color: var(--dark);
+  font-family: monospace;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.theme-switcher-area {
+  border: 1px solid var(--light);
+  background: var(--dark);
+  border-radius: 2rem;
+  width: 4.5rem;
+  height: 2.5rem;
+  padding: 0.2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+
+.theme-switcher-button {
+  position: relative;
+  display: block;
+  background: #f1aa02;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  border: 2px dashed var(--dark);
+  transition: 0.3s;
+}
+
+.theme-switcher-button::after {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  content: "";
+  background: var(--dark);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#theme-switcher:checked + #app-container .theme-switcher-button {
+    transform: translateX(100%);
+    border: none;
+}
+
+#theme-switcher:checked + #app-container .theme-switcher-button::after {
+    opacity: 1;
+}
+#theme-switcher:checked + #app-container {
+    background: var(--dark);
+    color: var(--light);
+}
+
+/* Fim o modo escuro*/
+
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
 
 a {
   color: #fff;
@@ -28,11 +108,6 @@ nav {
   height: 8vh;
 }
 
-main {
-  background: url("bg.jpg") no-repeat center center;
-  background-size: cover;
-  height: 92vh;
-}
 
 .nav-list {
   list-style: none;
@@ -55,6 +130,12 @@ main {
   background: #fff;
   margin: 8px;
   transition: 0.3s;
+}
+
+body{
+
+  background: var(--light);
+
 }
 
 @media (max-width: 999px) {
