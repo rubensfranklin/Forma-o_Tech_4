@@ -78,7 +78,7 @@
 
 
 main {
-  background: url("bg.jpg") no-repeat center center;
+  background: var(--light);
   background-size: cover;
   height: 92vh;
 }
