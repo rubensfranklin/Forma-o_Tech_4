@@ -1,10 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 :root {
   --light: #cccccc;
   --dark: #151515;
+  --text:#ffff;
+  --card: white;
 }
 
 /* Ativar o modo escuro*/
@@ -12,11 +15,6 @@
 /* Fim o modo escuro*/
 
 
-main {
-  background: var(--light);
-  background-size: cover;
-  height: 92vh;
-}
 
 a {
   color: #fff;
@@ -128,99 +126,29 @@ body{
 
 /* Cards com noticas*/
 
-
-main.cards {
-  display: flex;
-  padding: 32px;
+.row{
+  padding:0 20px;
+  display:table;
 }
 
-main.cards section.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background: white;
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  max-height: 468px;
-  margin-left: 32px;
+section{
+  float: left;
+  width: 75%;
 }
 
-main.cards section.card:first-child {
-  margin-left: 0;
+aside{
+  float: left;
+  width: 25%;
+    padding-left: 20px;
+ 
 }
 
-main.cards section.card .icon {
-  width: 250px;
-  height: 250px;
+.card{
+  background-color: var(--card);
+  padding: 20px;
+  margin-top: 20px;
 }
 
-main.cards section.card img {
+img{
   width: 100%;
-}
-
-main.cards section.card h3 {
-  font-size: 100%;
-  margin: 16px 0;
-}
-
-main.cards section.card span {
-  font-weight: 300;
-  max-width: 240px;
-  font-size: 80%;
-  margin-bottom: 16px;
-}
-
-main.cards section.card button {
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  border-radius: 32px;
-  border: 0;
-  cursor: pointer;
-  font-size: 80%;
-  font-weight: 500;
-  color: #fff;
-  margin-bottom: 16px 0;
-}
-
-
-main.cards section.card.contact button {
-  background: linear-gradient(to right, #23232e, #DFCBFF);
-}
-main.cards section.card.shop button {
-  background: linear-gradient(to right, #23232e, #DFCBFF);
-}
-main.cards section.card.about button {
-  background: linear-gradient(to right,#23232e, #DFCBFF);
-}
-
-main.cards section.card.contact {
-  box-shadow: 20px 20px 50px -30px #DBC4FF;
-}
-main.cards section.card.shop {
-  box-shadow: 20px 20px 50px -30px #DBC4FF;
-}
-main.cards section.card.about {
-  box-shadow: 20px 20px 50px -30px #DBC4FF;
-}
-
-
-@media screen and (max-width: 720px) {
-  main.cards {
-      flex-direction: column;
-  }
-
-  main.cards section.card {
-      margin-left: 0;
-      margin-bottom: 32px;
-  }
-
-  main.cards section.card:last-child {
-      margin-bottom: 0;
-  }
-
-  main.cards section.card button {
-      font-size: 70%;
-  }
-
 }
