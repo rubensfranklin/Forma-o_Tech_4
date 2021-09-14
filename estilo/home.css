@@ -150,6 +150,12 @@ aside{
 }
 
 img{
+  width: 500px;
+  height: 500px;
+}
+
+.card img{
+
   width: 100%;
 }
 .card button {
