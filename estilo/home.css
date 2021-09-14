@@ -152,3 +152,28 @@ aside{
 img{
   width: 100%;
 }
+
+/* media querries dos cards*/
+
+/* Tablet*/
+
+@media screen  and (max-width: 768px){
+  section,aside{
+    width:100%;
+    padding:0;
+
+  }
+  
+}
+
+/* Celular*/
+
+@media screen  and (max-width: 500px){
+  section,aside{
+    width:100%;
+    padding:0;
+
+  }
+  
+}
+
