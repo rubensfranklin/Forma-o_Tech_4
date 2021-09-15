@@ -133,12 +133,12 @@ body{
 
 section{
   float: left;
-  width: 75%;
+  width: 65%;
 }
 
 aside{
   float: left;
-  width: 25%;
+  width: 35%;
     padding-left: 20px;
  
 }
@@ -149,10 +149,6 @@ aside{
   margin-top: 20px;
 }
 
-img{
-  width: 500px;
-  height: 500px;
-}
 
 .card img{
 
