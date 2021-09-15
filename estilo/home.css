@@ -186,27 +186,36 @@ aside{
 .card button {
   background: linear-gradient(to right, #9F66FF, #DFCBFF);
 }
+
+mark{
+
+  background-color:#DFCBFF;
+}
+
 /* media querries dos cards*/
 
-/* Tablet*/
+/* Tablet Celular*/
 
 @media screen  and (max-width: 768px){
-  section,aside{
+  section{
+    
     width:100%;
-    padding:0;
+    
+  }
+  aside{
+    width: 100%;
+    padding: 0;
 
   }
-  
-}
 
-/* Celular*/
-
-@media screen  and (max-width: 500px){
-  section,aside{
-    width:100%;
-    padding:0;
-
+  iframe{
+    width: 100%;
   }
-  
 }
+
+
+
+
+
+
 
