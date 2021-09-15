@@ -91,7 +91,7 @@ body{
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #23232e;
+    background: #23232e; 
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -157,6 +157,7 @@ aside{
   float: left;
   width: 35%;
     padding-left: 20px;
+    margin-bottom: 10px;
  
 }
 
@@ -191,6 +192,64 @@ mark{
 
   background-color:#DFCBFF;
 }
+
+footer {
+  background: #23232e;
+  margin-top: 20px;
+
+}
+
+span{
+  color: #9F66FF;
+}
+footer.section {
+  padding: 4rem 0;
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color: #cccccc;
+  margin-bottom: 0.75rem;
+}
+footer .img {
+
+  align-items: right;
+}
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+
+footer .social a {
+  /* margin-right: 2rem; */
+  transition: 0.3s;
+  display: inline-block; /* precisa desse codigo para fazer a animação no icone*/
+}
+
+/*===== OR =====*/
+/* O display flex irá habilitar opção 'gap' que irá dar espaçamento entre os elementos, no caso o ("a") */
+
+footer .social {
+  grid-auto-flow: column; /* Organizando icones com class .grid no .social */
+  width: fit-content; /* ou seja, class="social grid" */
+  /* display: flex; */ /* outra maneira de organizar icones com display flex*/
+  /* gap: 2rem; */
+}
+
+/*usando tranformm3d para ter uma animação mais solta na tela */
+footer .social a:hover {
+  transform: translate3d(6px, -10px, 0);
+}
+/*Extra by john */
+footer i:hover {
+  transition: 0.3s;
+  font-size: 1.75rem;
+}
+
 
 /* media querries dos cards*/
 
