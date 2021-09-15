@@ -125,4 +125,37 @@
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+
+  #sobre{
+    display: flex;
+    justify-content: space-between;
+  }
+  .sobreParticipantes{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .imgParticipantes{
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  h2{
+    text-align: center;
+  }
   
+  #imgLinkedin{
+    width: 35px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+  
+  }
