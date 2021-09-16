@@ -133,7 +133,11 @@
   
 footer {
   background: #23232e;
-  margin-top: -0,5vh;
+  margin-top: 32px;
+  position:absolute;
+    bottom:0;
+    width:100%;
+  
 
 }
 
