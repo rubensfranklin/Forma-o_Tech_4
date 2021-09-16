@@ -16,8 +16,10 @@
     background: var(--light);
     background-size: cover;
     height: 100%;
-    
+    margin-bottom: 20px;
     width: 100%; 
+    text-align:center;
+    
   }
   
   a {
