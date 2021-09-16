@@ -42,38 +42,33 @@ a:hover {
   letter-spacing: 4px;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #23232e;
-  height: 8vh;
-}
-
-
-.nav-list {
-  list-style: none;
-  display: flex;
-}
-
-.nav-list li {
-  letter-spacing: 3px;
-  margin-left: 32px;
-}
-
-.mobile-menu {
-  display: none;
-  cursor: pointer;
-}
-
-.mobile-menu div {
-  width: 32px;
-  height: 2px;
-  background: #fff;
-  margin: 8px;
-  transition: 0.3s;
-}
+  #header {
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 2rem;
+    display: flex;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: var(--body-color);
+    width: 100%;
+  }
+  
+  /*======== Personalização by Frank ============*/
+  #header.scroll {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  #header.scroll .logo span {
+    color: green;
+    transition: 0.4s;
+  }
+  
+  #header.scroll .icon-menu {
+    color: green;
+    transition: 0.4s;
+  }
 
 body{
 
