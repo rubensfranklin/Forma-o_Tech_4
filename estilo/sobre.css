@@ -73,6 +73,7 @@
   grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
   padding: 20px;
   grid-gap: 40px;
+  text-align: center;
 }
 .card{
   background-color: #1c1b29;
@@ -104,6 +105,7 @@ img{
       #ffab1d,
       #f8501c
   );
+  
 }
 
 .details{
@@ -121,6 +123,7 @@ img{
   line-height: 30px;
   font-weight: 400;
 }
+
 
 
 
