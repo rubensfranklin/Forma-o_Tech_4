@@ -148,19 +148,16 @@ span{
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  background: #23232e;
+  background: orangered;
 }
 
-body.dark footer p {
-  color: rgb(26, 26, 26);
-}
-
+ 
 .footer p {
   font-family: 'Roboto Slab';
   font-size: 16px;
   text-align: center;
   margin: 20px;
-  color: #fff;
+  color: rgba(0, 0, 255, 0.527);
 }
 
 .footer-img {
