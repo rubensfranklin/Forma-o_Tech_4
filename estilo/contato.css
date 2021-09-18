@@ -23,7 +23,7 @@
   }
   
   a {
-    color: #fff;
+    color: blue;
     text-decoration: none;
     transition: 0.3s;
   }
@@ -43,7 +43,7 @@
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #23232e;
+    background: orangered;
     height: 8vh;
   }
   
@@ -147,7 +147,8 @@
   font-size: 16px;
   text-align: center;
   margin: 20px;
-  color: rgba(0, 0, 255, 0.527);
+  color: blue;
+  
 }
 
 .footer-img {
