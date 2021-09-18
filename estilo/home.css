@@ -92,7 +92,7 @@ body{
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  background: #23232e;
+  background: orangered;
 }
 
 body.dark footer p {
