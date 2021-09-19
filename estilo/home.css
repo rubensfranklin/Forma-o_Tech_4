@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-weight: 700;
   }
   p{
     margin-bottom: 20px;
@@ -33,6 +34,7 @@
     height: 8vh;
     position: fixed;
     width: 100%;
+    font-weight: 700;
   }
   
   
@@ -57,7 +59,7 @@
     background: #140083;
     margin: 8px;
     transition: 0.3s;
-    font-weight: 500;
+    font-weight: 700;
     margin-right: 50px;
   }
 
@@ -151,7 +153,9 @@ h2 {
     color: #ffffff;
     text-align: center;
     margin-bottom: 1rem;
-    font-weight: 700;
+    font-weight: 900;
+    text-shadow: 1px 1px;
+
 }
 
 h2 {
@@ -160,7 +164,10 @@ h2 {
   color: #33383c;
   text-align: center;
   margin-bottom: 1rem;
-  font-weight: 800;
+  font-weight: 900;
+  text-shadow: 1px 1px;
+ 
+
 }
 
 body.dark p {
