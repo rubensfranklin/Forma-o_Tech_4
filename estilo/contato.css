@@ -139,6 +139,10 @@
   justify-content: space-between;
   align-items: center;
   background: orangered;
+  position:absolute;
+  width:100%;
+  bottom:0;
+
 }
 
  
@@ -148,6 +152,8 @@
   text-align: center;
   margin: 20px;
   color: blue;
+  align-items: center;
+
   
 }
 
@@ -163,8 +169,7 @@
   padding: 10px;
 }
 
-span{
-  color: #9F66FF;
+
 }
 footer.section {
   padding: 4rem 0;
@@ -175,10 +180,7 @@ footer .logo {
   margin-bottom: 1.5rem;
 }
 
-footer .brand p {
-  color: #cccccc;
-  margin-bottom: 0.75rem;
-}
+
 footer .img {
 
   align-items: right;
@@ -186,30 +188,4 @@ footer .img {
 footer i {
   font-size: 1.5rem;
   color: var(--text-color-light);
-}
-
-footer .social a {
-  /* margin-right: 2rem; */
-  transition: 0.3s;
-  display: inline-block; /* precisa desse codigo para fazer a animação no icone*/
-}
-
-/*===== OR =====*/
-/* O display flex irá habilitar opção 'gap' que irá dar espaçamento entre os elementos, no caso o ("a") */
-
-footer .social {
-  grid-auto-flow: column; /* Organizando icones com class .grid no .social */
-  width: fit-content; /* ou seja, class="social grid" */
-  /* display: flex; */ /* outra maneira de organizar icones com display flex*/
-  /* gap: 2rem; */
-}
-
-/*usando tranformm3d para ter uma animação mais solta na tela */
-footer .social a:hover {
-  transform: translate3d(6px, -10px, 0);
-}
-/*Extra by john */
-footer i:hover {
-  transition: 0.3s;
-  font-size: 1.75rem;
 }

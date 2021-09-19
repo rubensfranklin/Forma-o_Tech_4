@@ -3,16 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root{
+  --light: #cccccc;
+  --dark: #151515;
+}
   
   /*==== Barra de Navegação ====== */
   
   
   
   .logo {
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   p{
     margin-bottom: 20px;
@@ -23,8 +29,10 @@
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: orangered;
+    background: #FF7200;
     height: 8vh;
+    position: fixed;
+    width: 100%;
   }
   
   
@@ -46,13 +54,181 @@
   .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #fff;
+    background: #140083;
     margin: 8px;
     transition: 0.3s;
+    font-weight: 500;
+    margin-right: 50px;
   }
 
 /* Ativar o modo escuro*/
+body {
+  font-family: Arial, sans-serif;
+  background: var(--color-bg);
+}
 
+body[data-theme="t-light"] {
+  --color-bg: #f2f2f2;
+  --color-bg2: #fff;
+  --color-text: #333;
+}
+
+body[data-theme="t-dark"] {
+  --color-bg: #333;
+  --color-bg2: #dcdcdc;
+  --color-text: #f2f2f2;
+}
+
+.my-title {
+  color: var(--color-text);
+}
+
+.body {
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+
+
+
+
+/* botão sol e lua*/
+
+
+.navcontrast {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.label {
+  background: linear-gradient(to right, #140083, #2596be);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.0);
+}
+input{
+  visibility: hidden
+}
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+  transform: translateX(24px);
+}
+
+body.dark {
+  background: var(--dark);
+
+}
+
+body.dark h1,
+h2 {
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h2 {
+  font-family: 'Roboto Slab';
+  font-size: 2.25rem;
+  color: #33383c;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+body.dark p {
+  color: white;
+}
+
+
+/* menu */
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background:var(--color-bg);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
 /* Fim o modo escuro*/
 
 /* Formmatando textos */
@@ -65,12 +241,14 @@ h2{
 p{
   font-family: 'Poppins', sans-serif;
   text-align: justify;
+  font-weight: 500;
 }
 
 a {
-  color: blue;
+  color: #140083;
   text-decoration: none;
   transition: 0.3s;
+  font-weight: 500;
 }
 
 a:hover {
@@ -79,11 +257,6 @@ a:hover {
 
 
 
-body{
-
-  background: var(--light);
-
-}
 
 
 /* Rodapé*/
@@ -92,7 +265,8 @@ body{
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  background: orangered;
+  background: #FF7200;
+  
 }
 
  
@@ -101,7 +275,8 @@ body{
   font-size: 16px;
   text-align: center;
   margin: 20px;
-  color: #0000ff;
+  color: #140083;
+  font-weight: 500;
   
 }
 
@@ -110,11 +285,12 @@ body{
   flex-direction: row;
   object-fit: cover;
   justify-content: center;
-  width: 300px;
+  width: 100px;
 }
 
 .footer-img img {
   padding: 10px;
+  width: 200px
 }
 @media (max-width: 999px) {
   body {
@@ -126,7 +302,7 @@ body{
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #23232e; 
+    background: #FF7200; 
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -174,6 +350,8 @@ body{
 .row{
   padding:0 20px;
   display:table;
+  background: var(--color-bg);
+  
 }
 
 section{
@@ -193,15 +371,24 @@ aside{
   width: 35%;
     padding-left: 20px;
     margin-bottom: 10px;
+    
  
 }
 
 .card{
-  background-color: var(--card);
+  background-color: var(--color-bg);
   padding: 20px;
   margin-top: 20px;
+  
+}
+.card p{
+  color: var(--color-text);
 }
 
+.card h2{
+  color: var(--color-text);
+  margin-top: 100px;
+}
 
 .card img{
 
@@ -215,28 +402,25 @@ aside{
   cursor: pointer;
   font-size: 80%;
   font-weight: 500;
-  color: #fff;
+  color: var(--color-bg);
   margin-bottom: 16px 0;
 }
 
 .card button {
-  background: linear-gradient(to right, #9F66FF, #DFCBFF);
+  background: linear-gradient(to right, #FF7200,orange);
 }
 
 mark{
 
-  background-color:#DFCBFF;
+  background-color:orange;
 }
 
 footer {
-  background: #23232e;
+  
   margin-top: 20px;
-
+  margin-bottom: 0;
 }
 
-span{
-  color: #9F66FF;
-}
 footer.section {
   padding: 4rem 0;
 }
@@ -246,44 +430,12 @@ footer .logo {
   margin-bottom: 1.5rem;
 }
 
-footer .brand p {
-  color: #cccccc;
-  margin-bottom: 0.75rem;
-}
 footer .img {
 
-  align-items: right;
-}
-footer i {
-  font-size: 1.5rem;
-  color: var(--text-color-light);
+  align-items: center;
 }
 
-footer .social a {
-  /* margin-right: 2rem; */
-  transition: 0.3s;
-  display: inline-block; /* precisa desse codigo para fazer a animação no icone*/
-}
 
-/*===== OR =====*/
-/* O display flex irá habilitar opção 'gap' que irá dar espaçamento entre os elementos, no caso o ("a") */
-
-footer .social {
-  grid-auto-flow: column; /* Organizando icones com class .grid no .social */
-  width: fit-content; /* ou seja, class="social grid" */
-  /* display: flex; */ /* outra maneira de organizar icones com display flex*/
-  /* gap: 2rem; */
-}
-
-/*usando tranformm3d para ter uma animação mais solta na tela */
-footer .social a:hover {
-  transform: translate3d(6px, -10px, 0);
-}
-/*Extra by john */
-footer i:hover {
-  transition: 0.3s;
-  font-size: 1.75rem;
-}
 
 
 /* media querries dos cards*/
@@ -318,7 +470,6 @@ footer i:hover {
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #23232e;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
