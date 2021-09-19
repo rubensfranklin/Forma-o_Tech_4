@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
   }
   p{
     margin-bottom: 20px;
@@ -149,7 +149,7 @@ body.dark {
 body.dark h1,
 h2 {
     font-family: 'Roboto Slab';
-    font-size: 20px;
+    font-size: 24px;
     color: #ffffff;
     text-align: center;
     margin-bottom: 1rem;
@@ -160,7 +160,7 @@ h2 {
 
 h2 {
   font-family: 'Roboto Slab';
-  font-size: 2.25rem;
+  font-size: 24px;
   color: #33383c;
   text-align: center;
   margin-bottom: 1rem;
@@ -255,7 +255,7 @@ a {
   color: #140083;
   text-decoration: none;
   transition: 0.3s;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 a:hover {
@@ -283,7 +283,7 @@ a:hover {
   text-align: center;
   margin: 20px;
   color: #140083;
-  font-weight: 500;
+  font-weight: 700;
   
 }
 
@@ -408,7 +408,7 @@ aside{
   border: 0;
   cursor: pointer;
   font-size: 80%;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--color-bg);
   margin-bottom: 16px 0;
 }
