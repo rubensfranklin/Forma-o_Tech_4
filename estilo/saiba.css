@@ -1,48 +1,115 @@
+#container{
+  display: flex;
+  width: 80%;
+  text-align: start;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+   margin: auto ;
+  margin-top: 50px;
+  padding: 30px;
+  margin-bottom: 30px;
+
+  
+}
+
+#container h1{
+  font-size: 60px;
+  margin-top: 10px;
+  color: #F76C30;
+}
+#container p{
+  font-size: 20px;
+  text-align: center;
+  padding-left: 50px;
+  
+}
+
+.texto-noticia{
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fontes{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 80px;
+  align-items: flex-start;
+}
+.fontes a{
+  text-decoration: none;
+  color: rgb(90, 90, 90);
+  font-size: 14px;
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+img{
+  width: 15%;
+ margin-right: 20px;
+ padding: 20px;
+
+}
+
+
+.agencia{
+  height: 200px;
+}
+
+.fa-link{
+  color: aqua;
+  padding-right: 10px;
+}
+
+/* menu e barra de navegação*/
 * {
-    margin: 0;
-    padding: 0;
-  }
-  :root {
-    --light: #cccccc;
-    --dark: #151515;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
   
-  /* Ativar o modo escuro*/
-  
-  /* Fim o modo escuro*/
+  /*==== Barra de Navegação ====== */
   
   
-  main {
-    background: var(--light);
-    background-size: cover;
-    height: 92vh;
-  }
-  
-  a {
-    color: blue;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  a:hover {
-    opacity: 0.7;
-  }
   
   .logo {
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
   }
-  
+  p{
+    margin-bottom: 20px;
+    
+  }
   nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: orangered;
+    background: #FF7200;
     height: 8vh;
+    position: relative;
+    width: 100%;
+    font-weight: 700;
+    text-decoration: none;
+
   }
-  
+  nav a {
+    color: #140083;
+    text-decoration: none;
+}
   
   .nav-list {
     list-style: none;
@@ -62,26 +129,133 @@
   .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #fff;
+    background: #140083;
     margin: 8px;
     transition: 0.3s;
-  }
-  
-  body{
-  
-    background: var(--light);
-  
+    font-weight: 700;
+    margin-right: 50px;
   }
 
- .footer {
+/* Ativar o modo escuro*/
+
+
+
+
+
+
+
+/* botão sol e lua*/
+
+
+.navcontrast {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.label {
+  background: linear-gradient(to right, #140083, #2596be);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.0);
+}
+input{
+  visibility: hidden
+}
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+  transform: translateX(24px);
+}
+
+body.dark {
+  background: var(--dark);
+
+}
+:root{
+  --light: #cccccc;
+  --dark: #151515;
+}
+body.dark h1,
+h2 {
+    font-family: 'Roboto Slab';
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    text-shadow: 1px 1px;
+
+}
+
+h2 {
+  font-family: 'Roboto Slab';
+  font-size: 24px;
+  color: #33383c;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  text-shadow: 1px 1px;
+ 
+
+}
+
+body.dark p {
+  color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.rodape{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+footer {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  background: orangered;
-  position:absolute;
-  width:100%;
-  bottom:0;
+  background: #FF7200;
+  margin-bottom: 0;
+  margin-top: 13rem;
+  position: absolute;
+  width: 100%;
+  
 }
 
  
@@ -90,7 +264,8 @@
   font-size: 16px;
   text-align: center;
   margin: 20px;
-  color: blue;
+  color: #140083;
+  font-weight: 700;
   
 }
 
@@ -99,75 +274,23 @@
   flex-direction: row;
   object-fit: cover;
   justify-content: center;
-  width: 300px;
+  width: 100px;
 }
 
 .footer-img img {
   padding: 10px;
-}
-}
-  
-  @media (max-width: 999px) {
-    body {
-      overflow-x: hidden;
-    }
-    .nav-list {
-      position: absolute;
-      top: 8vh;
-      right: 0;
-      width: 50vw;
-      height: 92vh;
-      background: #23232e;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-    }
-    .nav-list li {
-      margin-left: 0;
-      opacity: 0;
-    }
-    .mobile-menu {
-      display: block;
-    }
-  }
-  
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
-
-.saiba-mais {
-  margin: 80px;
-  line-height: 50px;
-  font-family: 'Roboto Slab';
-  font-size: 18px;
+  width: 200px
 }
 
-ul {
-  list-style-type: none;
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
 }
-  
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
