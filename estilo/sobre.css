@@ -33,7 +33,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #FF7200;
+  background: #E8721A;
   height: 8vh;
   position: fixed;
   width: 100%;
@@ -290,7 +290,7 @@ img{
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  background: #FF7200;
+  background: #E8721A;
   width: 100%;
   
 }
@@ -344,7 +344,7 @@ img{
 
   .nav-list {
     position: absolute;
-    background:#FF7200;
+    background:#E8721A;
     top: 8vh;
     right: 0;
     width: 50vw;

@@ -30,7 +30,7 @@
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #FF7200;
+    background: #E8721A;
     height: 8vh;
     position: fixed;
     width: 100%;
@@ -272,7 +272,7 @@ a:hover {
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  background: #FF7200;
+  background: #E8721A;
   
 }
 
@@ -309,7 +309,7 @@ a:hover {
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #FF7200; 
+    background: #E8721A; 
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -414,7 +414,7 @@ aside{
 }
 
 .card button {
-  background: linear-gradient(to right, #FF7200,orange);
+  background: linear-gradient(to right, #E8721A,orange);
 }
 
 mark{
